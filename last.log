@@ -1,0 +1,36 @@
+[INFO   ] [Kivy        ] v1.10.0
+[INFO   ] [Python      ] v2.7.12 (default, Jul 25 2017, 22:12:10) 
+[GCC 4.9.x 20150123 (prerelease)]
+[INFO   ] [Factory     ] 194 symbols loaded
+[INFO   ] [Image       ] Providers: img_tex, img_dds, img_pygame, img_pil, img_gif (img_ffpyplayer ignored)
+[INFO   ] [Text        ] Provider: pygame
+[INFO   ] [Window      ] Provider: pygame
+[INFO   ] [GL          ] Using the "OpenGL ES 2" graphics system
+[INFO   ] [GL          ] Backend used <gl>
+[INFO   ] [GL          ] OpenGL version <OpenGL ES 3.2 V@145.0 (GIT@I09d312ff84)>
+[INFO   ] [GL          ] OpenGL vendor <Qualcomm>
+[INFO   ] [GL          ] OpenGL renderer <Adreno (TM) 530>
+[INFO   ] [GL          ] OpenGL parsed version: 3, 2
+[INFO   ] [GL          ] Texture max size <16384>
+[INFO   ] [GL          ] Texture max units <16>
+[INFO   ] [Support     ] Android install hooks
+[INFO   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+[INFO   ] [GL          ] NPOT texture support is available
+ Traceback (most recent call last):
+   File "main.py", line 266, in <module>
+     MainApp().run()
+   File "/data/user/0/org.qpython.qpy/files/lib/python2.7/site-packages/kivy_qpython-1.10.0-py2.7.egg/kivy/app.py", line 827, in run
+     self.dispatch('on_start')
+   File "kivy/_event.pyx", line 718, in kivy._event.EventDispatcher.dispatch (kivy/_event.c:7726)
+   File "main.py", line 251, in on_start
+     novel=z.novellist(name=i)
+   File "/storage/emulated/0/qpython/projects/reading/zt.py", line 17, in novellist
+     with closing(urlopen(url)) as h:r=h.read()
+   File "/data/user/0/org.qpython.qpy/files/lib/python27.zip/urllib2.py", line 154, in urlopen
+   File "/data/user/0/org.qpython.qpy/files/lib/python27.zip/urllib2.py", line 435, in open
+   File "/data/user/0/org.qpython.qpy/files/lib/python27.zip/urllib2.py", line 548, in http_response
+   File "/data/user/0/org.qpython.qpy/files/lib/python27.zip/urllib2.py", line 473, in error
+   File "/data/user/0/org.qpython.qpy/files/lib/python27.zip/urllib2.py", line 407, in _call_chain
+   File "/data/user/0/org.qpython.qpy/files/lib/python27.zip/urllib2.py", line 556, in http_error_default
+ urllib2.HTTPError: HTTP Error 502: Bad Gateway
+
